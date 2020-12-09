@@ -1,0 +1,370 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/header_bg" >
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:contentDescription="@string/img_des"
+            android:src="@drawable/back" />
+
+        <ImageView
+            android:id="@+id/img_jobfavo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:contentDescription="@string/img_des"
+            android:paddingRight="8dp"
+            android:src="@drawable/fav_icon" />
+
+        <ImageView
+            android:id="@+id/img_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/img_jobfavo"
+            android:contentDescription="@string/img_des"
+            android:gravity="center"
+            android:src="@drawable/share" />
+
+        <ImageView
+            android:id="@+id/img_mapicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/img_share"
+            android:contentDescription="@string/img_des"
+            android:src="@drawable/map_icon" />
+    </RelativeLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/admob_banner_id" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/cate_round_border" >
+
+                    <com.example.util.SquareImageViewJobDetail
+                        android:id="@+id/img_jobs"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/text_jobname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginTop="3dp"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/text_color" />
+
+                        <TextView
+                            android:id="@+id/text_jobdesc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:text=""
+                            android:textColor="@color/text_color" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:id="@+id/img_salary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/img_des"
+                            android:paddingTop="5dp"
+                            android:src="@drawable/rupee_icon" />
+
+                        <TextView
+                            android:id="@+id/text_salary"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="5sp"
+                            android:paddingLeft="5sp"
+                            android:paddingTop="5sp"
+                            android:text=""
+                            android:textColor="@color/text_color"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:id="@+id/img_vacancy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/img_des"
+                            android:paddingTop="5dp"
+                            android:src="@drawable/vacancy_icon" />
+
+                        <TextView
+                            android:id="@+id/text_vacancy"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="5sp"
+                            android:paddingLeft="5sp"
+                            android:paddingTop="5sp"
+                            android:text=""
+                            android:textColor="@color/text_color"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:id="@+id/img_designation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/img_des"
+                            android:paddingTop="5dp"
+                            android:src="@drawable/designation_icon" />
+
+                        <TextView
+                            android:id="@+id/text_designation"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="5sp"
+                            android:paddingLeft="5sp"
+                            android:paddingTop="5sp"
+                            android:text=""
+                            android:textColor="@color/text_color"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:id="@+id/img_skill"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/img_des"
+                            android:paddingTop="5dp"
+                            android:src="@drawable/country_icon" />
+
+                        <TextView
+                            android:id="@+id/text_skill"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="5sp"
+                            android:paddingLeft="5sp"
+                            android:paddingTop="5sp"
+                            android:text=""
+                            android:textColor="@color/text_color"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:id="@+id/img_mail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/img_des"
+                            android:paddingTop="5dp"
+                            android:src="@drawable/email_icon" />
+
+                        <TextView
+                            android:id="@+id/text_mail"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:autoLink="email"
+                            android:paddingBottom="5sp"
+                            android:paddingLeft="5sp"
+                            android:paddingTop="5sp"
+                            android:text=""
+                            android:textColor="@color/text_color"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:id="@+id/img_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/img_des"
+                            android:paddingTop="5dp"
+                            android:src="@drawable/phone_icon" />
+
+                        <TextView
+                            android:id="@+id/text_phone"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:autoLink="phone"
+                            android:paddingBottom="5sp"
+                            android:paddingLeft="5sp"
+                            android:paddingTop="5sp"
+                            android:text=""
+                            android:textColor="@color/text_color"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:id="@+id/img_website"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/img_des"
+                            android:paddingTop="5dp"
+                            android:src="@drawable/web_icon" />
+
+                        <TextView
+                            android:id="@+id/text_website"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:autoLink="web"
+                            android:paddingBottom="5sp"
+                            android:paddingLeft="5sp"
+                            android:paddingTop="5sp"
+                            android:text=""
+                            android:textColor="@color/text_color"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:id="@+id/img_comname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/img_des"
+                            android:paddingTop="5dp"
+                            android:src="@drawable/company_name_icon" />
+
+                        <TextView
+                            android:id="@+id/text_comname"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="5sp"
+                            android:paddingLeft="5sp"
+                            android:paddingTop="5sp"
+                            android:text=""
+                            android:textColor="@color/text_color"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:id="@+id/img_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/img_des"
+                            android:paddingTop="5dp"
+                            android:src="@drawable/cityname_icon" />
+
+                        <TextView
+                            android:id="@+id/text_address"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="5sp"
+                            android:paddingLeft="5sp"
+                            android:paddingTop="5sp"
+                            android:text=""
+                            android:textColor="@color/text_color"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <ImageView
+                            android:id="@+id/img_country"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/img_des"
+                            android:paddingTop="5dp"
+                            android:src="@drawable/skill_icon" />
+
+                        <TextView
+                            android:id="@+id/text_country"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="5sp"
+                            android:paddingLeft="5sp"
+                            android:paddingTop="5sp"
+                            android:text="afsf sjiaj jwijr jwrijij korko owkrokw"
+                            android:textColor="@color/text_color"
+                            android:textSize="22sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

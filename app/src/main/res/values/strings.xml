@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">برنامه ی کار یابی</string>
+    <string name="action_settings">تنظیمات</string>
+    <string name="hello_world">سلام دنیا!</string>
+    <string name="img_des">تصویر</string>
+     <string name="favourite">علاقه مندی ها</string>
+    <string name="about">درباره</string>
+    <string name="img_no">هیچ مورد دلخواه یافت نشد</string>
+    <string name="menu_search">جست و جو</string>
+
+    <!-- connection message -->
+    <string name="conne_msg1">بدون اتصال به شبکه!!!</string>
+    <string name="conne_msg2">خطای اتصال به اینترنت</string>
+    <string name="conne_msg3">لطفا بعد از اتصال به اینترنت امتحان کنید</string>
+    <string name="conne_msg4">خطای اتصال سرور</string>
+    <string name="conne_msg5">ممکن است سرور تحت شبکه یا شبکه پایین نگه داشته شود</string>
+    <string name="loading">درحال بارگذاری...</string>
+    
+     <string name="startapp_app_id">209742654</string>
+    <string name="startapp_dev_id">101068545</string>
+
+    <string name="admob_banner_id">ca-app-pub-8356404931736973/8456975199</string> <!-- Change AdMob Id -->
+    
+
+</resources>

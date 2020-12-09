@@ -1,0 +1,166 @@
+{
+  "project_info": {
+    "project_number": "3520309722",
+    "firebase_url": "https://codecanyon-cede9.firebaseio.com",
+    "project_id": "codecanyon-cede9",
+    "storage_bucket": "codecanyon-cede9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:3520309722:android:f4f099174d8d6de6",
+        "android_client_info": {
+          "package_name": "com.viaviapp.androiddrawing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "3520309722-a0e82qitamnsntik8ov87b83184kfer0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAY56Oj0cV568eI3kFzYyDSEaaMEtON4nI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:3520309722:android:89642f61346cbc35",
+        "android_client_info": {
+          "package_name": "com.viaviapp.stories"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "3520309722-a0e82qitamnsntik8ov87b83184kfer0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAY56Oj0cV568eI3kFzYyDSEaaMEtON4nI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:3520309722:android:054b7d90e35a493a",
+        "android_client_info": {
+          "package_name": "com.viaviapp.imagequiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "3520309722-a0e82qitamnsntik8ov87b83184kfer0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAY56Oj0cV568eI3kFzYyDSEaaMEtON4nI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:3520309722:android:ffa1f52d7da5f658",
+        "android_client_info": {
+          "package_name": "com.viaviapp.quizapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "3520309722-a0e82qitamnsntik8ov87b83184kfer0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAY56Oj0cV568eI3kFzYyDSEaaMEtON4nI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:3520309722:android:ff78d9ecff742c49",
+        "android_client_info": {
+          "package_name": "com.apps.jobapps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "3520309722-a0e82qitamnsntik8ov87b83184kfer0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAY56Oj0cV568eI3kFzYyDSEaaMEtON4nI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
